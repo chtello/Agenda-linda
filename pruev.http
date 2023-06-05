@@ -1,0 +1,25 @@
+###
+POST http://localhost:3000/api/Notas HTTP/1.1
+Content-Type: application/json
+
+{
+    "Titulo":"ygygg",
+    "Fecha":56,
+    "Descripción":"priota"
+}
+###
+GET http://localhost:3000/api/Notas HTTP/1.1
+
+###
+GET http://localhost:3000/api/Notas/647d46d3dadf79e4f69655bf HTTP/1.1
+###
+PUT http://localhost:3000/api/Notas/647d46d3dadf79e4f69655bf HTTP/1.1
+Content-Type: application/json
+
+{
+    "Titulo":"hola mundo",
+    "Fecha":25,
+    "Descripción":"hacer trea"
+}
+###
+DELETE http://localhost:3000/api/Notas/647d46d3dadf79e4f69655bf HTTP/1.1
